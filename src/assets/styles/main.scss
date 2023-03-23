@@ -1,9 +1,10 @@
-$color: blue;
+$color: #c6538c;
 
-.title{
-    color: $color;
 
-    &.__span{
-      background-color: green
-    }
+.section{
+  background-color: $color;
+
+  &__title{
+    background-color: blue;
+  }
 }
