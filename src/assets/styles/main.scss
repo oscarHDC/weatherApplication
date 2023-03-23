@@ -1,0 +1,9 @@
+$color: blue;
+
+.title{
+    color: $color;
+
+    &.__span{
+      background-color: green
+    }
+}
