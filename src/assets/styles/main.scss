@@ -1,10 +1,1 @@
-$color: #c6538c;
-
-
-.section{
-  background-color: $color;
-
-  &__title{
-    background-color: blue;
-  }
-}
+@import url("/src/assets/styles/general.scss");
