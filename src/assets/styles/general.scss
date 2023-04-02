@@ -1,11 +1,22 @@
+/* @import url("/src/assets/styles/colors.scss"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;400;600;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "lexend", sans-serif;
 }
 
 body {
-    background-color: grey;
+    background-color: $g;
+    font-size: 10px;
+    color: #555;
 }
 
-.container {}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}

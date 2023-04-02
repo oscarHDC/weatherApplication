@@ -1,8 +1,8 @@
 
 <template>
-  <h1>Hola</h1>
-  <p>fkds</p>
-  <SearchBar />
+  <div class="container">
+    <SearchBar />
+  </div>
 </template>
 
 
@@ -16,5 +16,12 @@ export default {
 
 <style lang="scss" >
 @import "@/assets/styles/main.scss";
- 
+@import "@/assets/styles/colors.scss";
+
+$grey: #999;
+
+body{
+  background-color: $grey;
+}
+
 </style>
