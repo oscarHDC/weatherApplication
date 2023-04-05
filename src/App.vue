@@ -1,30 +1,29 @@
-<script lang="ts">
-export default {
-  data() {
-    return {
-      count: 0,
-    }
-  },
-  methods: {
-    say() {
-      console.log('aaa')
-        
-    }
-  }
-
-}
-
-</script>
 
 <template>
-    <section class="section">
-        <h1 class="section__title ">Section title</h1>
-        <p class="section__text">Section text</p>
-    </section>
-
-    <h1 class="section__title">Example</h1>
+  <div class="container">
+    <h1>Weather Application</h1>
+    <SearchBar />
+  </div>
 </template>
 
-<style lang="scss" scoped>
-@import "./assets/styles/main.scss";
+
+<script lang="ts">
+import SearchBar from '@/components/searchBar.vue'
+export default {
+  components: { SearchBar }
+}
+    
+</script>
+
+<style lang="scss" >
+@import "@/assets/styles/main.scss";
+@import "@/assets/styles/colors.scss";
+
+$grey: #999;
+
+body{
+  background-color: $grey;
+  font-size: 10px;
+}
+
 </style>

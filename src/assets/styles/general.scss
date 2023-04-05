@@ -1,9 +1,22 @@
-*{
+/* @import url("/src/assets/styles/colors.scss"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
 }
 
-.container{
-    
+body {
+    background-color: $g;
+    color: #555;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
