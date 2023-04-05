@@ -1,6 +1,7 @@
 
 <template>
   <div class="container">
+    <h1>Weather Application</h1>
     <SearchBar />
   </div>
 </template>
@@ -22,6 +23,7 @@ $grey: #999;
 
 body{
   background-color: $grey;
+  font-size: 10px;
 }
 
 </style>

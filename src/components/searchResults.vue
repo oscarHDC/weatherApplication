@@ -17,7 +17,13 @@ export default{
 
 <style lang="scss" scoped>
   .results__container{
-    max-width: 800px;
-    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    position: absolute;
+    top: 3rem;
   }
 </style>

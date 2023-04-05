@@ -14,7 +14,7 @@ export default defineComponent({
     },
     size: {
       type: String,
-      default: '16px'
+      default: '1.6rem'
     },
   },
 

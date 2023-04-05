@@ -1,8 +1,11 @@
 <template>
-  <h1>Search city by name</h1>
-  <AppIcon :icon="iconImg" />
-  <input type="search" v-model="searchText" @input="handleSearch()">
-  <searchResults :cities="cities"/>
+  <div class="searchBar__container">
+    <div class="searchBar">
+      <AppIcon :icon="iconImg" />
+      <input type="search" v-model="searchText" @input="handleSearch()" placeholder="Search a city">
+    </div>
+    <searchResults :cities="cities"/>
+  </div>
 
 </template>
 
@@ -45,4 +48,30 @@ export default {
 
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+
+  .searchBar{
+    padding: 10px;
+    background-color: white;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+
+    input{
+      border: none;
+      outline: none;
+      background: unset;
+      appearance: none;
+      width: 100%;
+    }
+
+    &__container{
+      max-width: 35rem;
+      margin: 0 auto;
+      position: relative;
+    }
+  }
+
+
+</style>
