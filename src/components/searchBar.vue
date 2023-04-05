@@ -1,6 +1,6 @@
 <template>
   <h1>Search city by name</h1>
-  <AppIcon :icon="bgImg" />
+  <AppIcon :icon="iconImg" />
   <input type="search" v-model="searchText" @input="handleSearch()">
   <searchResults :cities="cities"/>
 
@@ -19,16 +19,14 @@ export default {
     return {
       searchText: '',
       cities: [],
-      bgImg: imgURL
+      iconImg: imgURL
     }
   },
 
   methods: {
     async handleSearch() {
       try{
-        if(this.searchText){
-          console.log(typeof this.bgImg)
-          
+        if(this.searchText){          
           const res = await searchCitiesService.getCity(this.searchText)
           res ? this.cities = res.data : this.cities = []
         }else{
