@@ -22,7 +22,6 @@ export default {
 $grey: #999;
 
 body{
-  background-color: $grey;
   font-size: 10px;
 }
 

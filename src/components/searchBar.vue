@@ -2,7 +2,7 @@
   <div class="searchBar__container">
     <div class="searchBar">
       <AppIcon :icon="iconImg" />
-      <input type="search" v-model="searchText" @input="handleSearch()" placeholder="Search a city">
+      <input type="search" v-model="searchText" @input="handleSearch()" placeholder="Search a city...">
     </div>
     <searchResults :cities="cities"/>
   </div>
@@ -56,7 +56,9 @@ export default {
     border-radius: 7px;
     width: 100%;
     display: flex;
+    align-items: center;
     gap: 1rem;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
 
     input{
       border: none;
@@ -64,6 +66,10 @@ export default {
       background: unset;
       appearance: none;
       width: 100%;
+
+      &::placeholder{
+        color: rgb(173, 173, 173);
+      }
     }
 
     &__container{

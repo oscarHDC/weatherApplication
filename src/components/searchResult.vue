@@ -27,13 +27,15 @@ export default{
       cursor: pointer;
       transition: all .3s ease-out;
 
-      &:hover{
-        background-color: rgb(191, 191, 191);
+     &:last-child{
+      border-bottom-left-radius: 7px;
+      border-bottom-right-radius: 7px;
+    }    
+  
+    &:hover{
+        background-color: #dedede;
       }
 
-      p:hover{
-        color: green;
-        transition: all .2s ease-out;
-      }
     }
+
 </style>

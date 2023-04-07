@@ -36,4 +36,9 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+  img{
+    filter: brightness(0);
+    opacity: 20%;
+  }
+</style>
