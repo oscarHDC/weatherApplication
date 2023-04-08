@@ -9,6 +9,7 @@
 
 <script lang="ts">
 import SearchBar from '@/components/searchBar.vue'
+
 export default {
   components: { SearchBar }
 }

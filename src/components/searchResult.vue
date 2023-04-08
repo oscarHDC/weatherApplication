@@ -1,5 +1,5 @@
 <template>
-  <div class="result">
+  <div class="result" @click="handleClick">
     <p>{{ city.name }}, {{ city.state }}</p>
     <p>{{ city.country }}</p>
   </div>
@@ -9,12 +9,21 @@
 <script lang="ts">
 export default{
   name: 'SearchResult',
+
+  
   props: {
     city: {
       type: Object,
       required: true
     }
+  },
+
+  methods: {
+    handleClick(){
+      console.log(this.city.lon, this.city.lat)
+    }
   }
+  
 }
 </script>
 

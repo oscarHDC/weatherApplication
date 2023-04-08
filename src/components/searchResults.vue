@@ -1,7 +1,7 @@
 <template>
-  <div class="results__container">
-    <searchResult v-for="city in cities" :city="city" :key="city" />
-  </div>
+    <div class="results__container">
+      <searchResult v-for="city in cities" :city="city" :key="city" />
+    </div>
 </template>
 
 <script lang="ts">
@@ -23,7 +23,7 @@ export default{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 3rem;
+    top: 3.4rem;
     
     &:last-child{
       border-bottom-left-radius: 7px;
