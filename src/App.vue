@@ -9,6 +9,7 @@
 
 <script lang="ts">
 import SearchBar from '@/components/searchBar.vue'
+
 export default {
   components: { SearchBar }
 }
@@ -22,7 +23,6 @@ export default {
 $grey: #999;
 
 body{
-  background-color: $grey;
   font-size: 10px;
 }
 
