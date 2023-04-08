@@ -1,29 +1,19 @@
 
 <template>
-  <div class="container">
-    <h1>Weather Application</h1>
-    <SearchBar />
-  </div>
+  <AppLayout />
 </template>
 
 
 <script lang="ts">
-import SearchBar from '@/components/searchBar.vue'
+import AppLayout from '@/components/AppLayout.vue'
 
 export default {
-  components: { SearchBar }
+  components: { AppLayout }
 }
     
 </script>
 
 <style lang="scss" >
-@import "@/assets/styles/main.scss";
-@import "@/assets/styles/colors.scss";
 
-$grey: #999;
-
-body{
-  font-size: 10px;
-}
 
 </style>

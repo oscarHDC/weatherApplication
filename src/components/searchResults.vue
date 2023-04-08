@@ -1,16 +1,39 @@
 <template>
     <div class="results__container">
-      <searchResult v-for="city in cities" :city="city" :key="city" />
+      <searchResult v-for="city in cities" :city="city" :key="city" @click="a(city)" />
     </div>
 </template>
 
 <script lang="ts">
 import searchResult from '@/components/searchResult.vue'
+import { City } from '@/shared/types/common'
+
 export default{
   name: 'searchResults',
+
   components: {searchResult},
+
   props: {
     cities: [] as Array<any>
+  },
+
+  data(){
+    return{
+      city: {
+        name: String,
+        lat: Number,
+        lon: Number
+      }
+    }
+  },
+
+  methods: {
+    a(c: any){
+      this.city.name = c.name
+      this.city.lat = c.lat
+      this.city.lon = c.lon
+      
+    }
   }
 }
 </script>

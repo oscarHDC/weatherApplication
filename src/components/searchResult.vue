@@ -1,5 +1,5 @@
 <template>
-  <div class="result" @click="handleClick">
+  <div class="result">
     <p>{{ city.name }}, {{ city.state }}</p>
     <p>{{ city.country }}</p>
   </div>
@@ -18,12 +18,6 @@ export default{
     }
   },
 
-  methods: {
-    handleClick(){
-      console.log(this.city.lon, this.city.lat)
-    }
-  }
-  
 }
 </script>
 
